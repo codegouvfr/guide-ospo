@@ -1,5 +1,5 @@
 # Default locale for UI strings
-locale: "en"
+locale: "fr"
 
 # Customize UI strings
 ui-strings:
@@ -16,7 +16,7 @@ ui-strings:
 
 # Website header
 header:
- title:    "Here is my title."
+ title:    "Questionnaire OSPO"
  logo:     ""
  color:    "is-primary"
  subtitle: "A subtitle here, possibly with _markdown_ formatting."
@@ -102,39 +102,44 @@ conditional-score-outputs:
 # Mandatory configuration option
 tree:
   - node:       "0"
-    text:       "A title for the default page"
+    text:       "Paré à commencer ?"
     home-page:  true
     force-help: true
     no-summary: true
     help:       "Some introductory text here."
     choices:
-    - answer: "Start now"
+    - answer: "Oui !"
       goto:   "1"
       color:  "is-info"
 
+
   - node:       "1"
     progress:   "[1 3]"  # progress bar
-    text:       "Is it the first question?"
+    text:       "Y a-t-il une personne ou une équipe dédiée au logiciel libre/ à l'open source ?"
     help:       "Some **help text** here for the first question.  Markdown formatting accepted."
     start-page: true
     choices:
-    - answer:  "Yes"
-      summary: "Yes, this is the first question."
+    - answer:  "1"
+      summary: "Oui, il y a une personne dédiée au logiciel libre/ à l'open source."
       explain: "Some explanation here."
       score:
         score-1:
           value: 1
       goto:    "2"
       color:   "is-info"
-    - answer:  "No"
-      summary: "No, this is not the first question."
+    - answer:  "2 à 4"
+      summary: "Il y a 2 à 4 personnes dédiées au logiciel libre/ à l'open source"
       color:   "is-warning"
-      goto:    "end"
+      goto:    "2"
+    - answer:  "plus de 4"
+      summary: "Il y a 2 à 4 personnes dédiées au logiciel libre/ à l'open source"
+      color:   "is-warning"
+      goto:    "2"
 
   - node:     "2"
     progress: "[2 3]"  # progress bar
-    text:     "Is it the second question?"
-    help:     "Some help text here for the second question."
+    text:     "Cette équipe est-elle pluridisciplinaire ?"
+    help:     "C'est-à-dire avec un traitement des questions légales, techniques, de gouvernance et de communauté"
     choices:
     - answer:  "Yes"
       summary: "Yes, this is the second question!"
