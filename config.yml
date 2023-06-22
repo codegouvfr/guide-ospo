@@ -407,7 +407,7 @@ tree:
         goto: "16"
         color: "is-info"
       - answer:  "Non"
-        summary: "Votre équipe n'est pas en lien avec d'autres membres d'associations, d'entreprises, de la communauté du libre."
+        summary: "Votre équipe ne collabore pas avec d'autres membres d'associations, d'entreprises, de la communauté du libre."
         color: "is-warning"
         goto: "end"  
 
