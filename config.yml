@@ -120,7 +120,7 @@ tree:
     start-page: true
     choices:
     - answer:  "1"
-      summary: "Oui, il y a une personne dédiée au logiciel libre/ à l'open source."
+      summary: "Vous êtes la seule personne dédiée au logiciel libre/ à l'open source."
       explain: "Some explanation here."
       score:
         score-1:
@@ -128,11 +128,11 @@ tree:
       goto:    "2"
       color:   "is-info"
     - answer:  "2 à 4"
-      summary: "Il y a 2 à 4 personnes dédiées au logiciel libre/ à l'open source"
+      summary: "Votre équipe contient 2 à 4 personnes dédiées au logiciel libre/ à l'open source"
       color:   "is-warning"
       goto:    "2"
     - answer:  "plus de 4"
-      summary: "Il y a 2 à 4 personnes dédiées au logiciel libre/ à l'open source"
+      summary: "Votre équipe contient plus de 4 personnes dédiées au logiciel libre/ à l'open source"
       color:   "is-warning"
       goto:    "2"
 
@@ -141,32 +141,132 @@ tree:
     text:     "Cette équipe est-elle pluridisciplinaire ?"
     help:     "C'est-à-dire avec un traitement des questions légales, techniques, de gouvernance et de communauté"
     choices:
-    - answer:  "Yes"
-      summary: "Yes, this is the second question!"
+    - answer:  "Oui tout à fait"
+      summary: "Votre équipe est pluridisciplinaire"
+      score:
+        score-2:
+          value: 10
+      goto:    "3"
+    - answer:  "En partie/en cours"
+      summary: "Votre équipe est presque pluridisciplinaire"
       score:
         score-2:
           value: 10
       goto:    "3"
       color:   "is-info"
     - answer:  "No"
-      summary: "No, this is not the second question."
+      summary: "Votre équipe n'est pas pluridisciplinaire."
       color:   "is-warning"
       goto:    "end"
 
   - node:     "3"
     progress: "[3 3]"  # progress bar
-    text:     "Is it the _third_ question?"
+    text:     "L'équipe déploie-t-elle une stratégie open source ?"
     help:     "Some help text here for the second question."
     choices:
-      - answer:  "Yes"
-        summary: ["Yes, this is the third question...", "This will end soon, I promise."]
-        goto: "end"
+      - answer:  "Oui"
+        summary: "Votre équipe déploie une stratégie open source"
+        goto: "4"
         color: "is-info"
-      - answer:  "No"
-        summary: "No, this is not the third question."
+      - answer:  "En partie/en cours"
+        summary: "Votre équipe est en train de déploiyer une stratégie open source"
+        goto: "4"
+        color: "is-info"
+      - answer:  "Non"
+        summary: "Votre équipe n'a pas de stratégie open source."
         color: "is-warning"
         goto: "end"
 
+  - node:     "4"
+    progress: "[4 3]"  # progress bar
+    text:     "Cette stratégie s'intéresse-t-elle à :"
+    help:     "Some help text here for the second question."
+    choices:
+      - answer:  "Oui"
+        summary: "Votre équipe déploie une stratégie open source"
+        goto: "4"
+        color: "is-info"
+      - answer:  "En partie/en cours"
+        summary: "Votre équipe est en train de déploiyer une stratégie open source"
+        goto: "4"
+        color: "is-info"
+      - answer:  "Non"
+        summary: "Votre équipe n'a pas de stratégie open source."
+        color: "is-warning"
+        goto: "end"
+
+  - node:     "5"
+    progress: "[5 3]"  # progress bar
+    text:     "L'équipe dispose-t-elle d'un portail de présentation (site web) ?"
+    help:     "Some help text here for the second question."
+    choices:
+      - answer:  "Oui tout à fait"
+        summary: "Votre équipe dispose d'un portail de présentation."
+        goto: "6"
+        color: "is-info"
+      - answer:  "En partie/en cours"
+        summary: "Votre équipe est en train de s'équiper d'un portail de présentation."
+        goto: "6"
+        color: "is-info"
+      - answer:  "Non"
+        summary: "Votre équipe n'a pas de portail de présentation."
+        color: "is-warning"
+        goto: "end"
+
+  - node:     "6"
+    progress: "[6 3]"  # progress bar
+    text:     "L'équipe dispose-t-elle d'un catalogue de recommandation de logiciels libres ?"
+    help:     "Some help text here for the second question."
+    choices:
+      - answer:  "Oui tout à fait"
+        summary: "Votre équipe dispose d'un catalogue de recommandation de logiciels libres."
+        goto: "7"
+        color: "is-info"
+      - answer:  "En partie/en cours"
+        summary: "Votre équipe est en train de s'équiper d'un catalogue de recommandation de logiciels libres."
+        goto: "7"
+        color: "is-info"
+      - answer:  "Non"
+        summary: "Votre équipe n'a pas de catalogue de recommandation de logiciels libres."
+        color: "is-warning"
+        goto: "end"
+
+ - node:     "7"
+    progress: "[7 3]"  # progress bar
+    text:     "L'équipe dispose-t-elle d'une liste de dépôts publiés ?"
+    help:     "Par exemple le SILL pour la mission logiciels libres de la DINUM"
+    choices:
+      - answer:  "Oui tout à fait"
+        summary: "Votre équipe dispose d'une liste de dépôts publiés."
+        goto: "8"
+        color: "is-info"
+      - answer:  "En partie/en cours"
+        summary: "Votre équipe est en train de créer une liste de dépôts publiés."
+        goto: "8"
+        color: "is-info"
+      - answer:  "Non"
+        summary: "Votre équipe n'a pas de liste de dépôts publiés."
+        color: "is-warning"
+        goto: "end"
+
+ - node:     "8"
+    progress: "[8 3]"  # progress bar
+    text:     "L'équipe dispose-t-elle d'une liste de dépôts publiés ?"
+    help:     "Par exemple le SILL pour la mission logiciels libres de la DINUM"
+    choices:
+      - answer:  "Oui tout à fait"
+        summary: "Votre équipe dispose d'une liste de dépôts publiés."
+        goto: "9"
+        color: "is-info"
+      - answer:  "En partie/en cours"
+        summary: "Votre équipe est en train de créer une liste de dépôts publiés."
+        goto: "9"
+        color: "is-info"
+      - answer:  "Non"
+        summary: "Votre équipe n'a pas de liste de dépôts publiés."
+        color: "is-warning"
+        goto: "end"
+  
   - node: "end"
     text: "This is the end."
     done: true
