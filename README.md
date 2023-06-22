@@ -1,4 +1,3 @@
-
 # `Choices`
 
 `Choices` lets you build a single page application to let users traverse
