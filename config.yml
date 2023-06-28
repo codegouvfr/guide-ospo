@@ -51,7 +51,7 @@ tree:
         goto: "1"
         color: is-info
   - node: "1"
-    progress: "[1 3]"
+    progress: "[1 16]"
     text: Y a-t-il une personne ou une équipe dédiée au logiciel libre/ à l'open
       source ?
     help: Some **help text** here for the first question.  Markdown formatting
@@ -77,7 +77,7 @@ tree:
         color: is-warning
         goto: "2"
   - node: "2"
-    progress: "[2 3]"
+    progress: "[2 16]"
     text: Cette équipe est-elle pluridisciplinaire ?
     help: C'est-à-dire avec un traitement des questions légales, techniques, de
       gouvernance et de communauté
@@ -100,7 +100,7 @@ tree:
         color: is-warning
         goto: end
   - node: "3"
-    progress: "[3 3]"
+    progress: "[3 16]"
     text: L'équipe déploie-t-elle une stratégie open source ?
     help: Some help text here for the second question.
     choices:
@@ -117,7 +117,7 @@ tree:
         color: is-warning
         goto: end
   - node: "4"
-    progress: "[4 3]"
+    progress: "[4 16]"
     text: "Cette stratégie s'intéresse-t-elle à :"
     help: Some help text here for the second question.
     choices:
@@ -134,7 +134,7 @@ tree:
         color: is-warning
         goto: end
   - node: "5"
-    progress: "[5 3]"
+    progress: "[5 16]"
     text: L'équipe dispose-t-elle d'un portail de présentation (site web) ?
     help: Some help text here for the second question.
     choices:
@@ -151,7 +151,7 @@ tree:
         color: is-warning
         goto: end
   - node: "6"
-    progress: "[6 3]"
+    progress: "[6 16]"
     text: L'équipe dispose-t-elle d'un catalogue de recommandation de logiciels
       libres ?
     help: Some help text here for the second question.
@@ -172,7 +172,7 @@ tree:
         color: is-warning
         goto: end
   - node: "7"
-    progress: "[7 3]"
+    progress: "[7 16]"
     text: L'équipe dispose-t-elle d'une liste de dépôts publiés ?
     help: Par exemple le SILL pour la mission logiciels libres de la DINUM
     choices:
@@ -189,7 +189,7 @@ tree:
         color: is-warning
         goto: end
   - node: "8"
-    progress: "[8 3]"
+    progress: "[8 16]"
     text: L'équipe dispose-t-elle d'une liste des licences utilisables ?
     help: ""
     choices:
@@ -206,7 +206,7 @@ tree:
         color: is-warning
         goto: end
   - node: "9"
-    progress: "[9 3]"
+    progress: "[9 16]"
     text: L'équipe dispose-t-elle de manière générale d'une documentation ?
     help: ""
     choices:
@@ -223,7 +223,7 @@ tree:
         color: is-warning
         goto: end
   - node: "10"
-    progress: "[10 3]"
+    progress: "[10 16]"
     text: L'équipe est-elle parvenue à mettre en lien et à créer du lien avec les
       membres de son organisation ?
     help: ""
@@ -244,7 +244,7 @@ tree:
         color: is-warning
         goto: end
   - node: "11"
-    progress: "[11 3]"
+    progress: "[11 16]"
     text: L'équipe fait-elle la promotion du logiciel libre ?
     help: Elle explique son intérêt, ses avantages, et indique les bonnes pratiques
       à adopter.
@@ -262,7 +262,7 @@ tree:
         color: is-warning
         goto: end
   - node: "12"
-    progress: "[12 3]"
+    progress: "[12 16]"
     text: L'équipe fait-elle la promotion du logiciel libre de manière globale, en
       dehors de son organisation ?
     help: ""
@@ -283,7 +283,7 @@ tree:
         color: is-warning
         goto: end
   - node: "13"
-    progress: "[13 3]"
+    progress: "[13 16]"
     text: L'équipe incite-t-elle ses membres à contribuer à des projets open source
       en dehors de ses propres produits logiciels ?
     help: ""
@@ -304,7 +304,7 @@ tree:
         color: is-warning
         goto: end
   - node: "14"
-    progress: "[14 3]"
+    progress: "[14 16]"
     text: L'équipe incite-t-elle ses membres à contribuer à des projets open source
       en dehors de ses propres produits logiciels ?
     help: ""
@@ -325,7 +325,7 @@ tree:
         color: is-warning
         goto: end
   - node: "15"
-    progress: "[15 3]"
+    progress: "[15 16]"
     text: L'équipe est-elle en lien avec d'autres membres d'associations,
       d'entreprises, de la communauté du libre ?
     help: ""
@@ -366,5 +366,5 @@ tree:
         color: is-warning
         goto: end
   - node: end
-    text: This is the end.
+    text: Vous avez fini le questionnaire. Voyons voir ce que ça donne.
     done: true
