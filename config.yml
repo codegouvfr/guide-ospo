@@ -5,7 +5,7 @@ header:
   title: Questionnaire OSPO
   logo: ""
   color: is-primary
-  subtitle: A subtitle here, possibly with _markdown_ formatting.
+  subtitle: Voici un questionnaire sur votre OSPO, vous permettant de connaître votre degré d'ospoïsation !
 footer:
   text: Some text here, possibly with **markdown** formatting.
   contact: ""
@@ -45,7 +45,7 @@ tree:
     home-page: true
     force-help: true
     no-summary: true
-    help: Some introductory text here.
+    help: Vous vous apprétez à répondre à un questionnaire de 18 questions.
     choices:
       - answer: Oui !
         goto: "1"
@@ -53,28 +53,27 @@ tree:
   - node: "1"
     progress: "[1 16]"
     text: Y a-t-il une personne ou une équipe dédiée au logiciel libre/ à l'open
-      source ?
-    help: Some **help text** here for the first question.  Markdown formatting
-      accepted.
+      source au sein de votre organisation ?
+    help: 
     start-page: true
     choices:
       - answer: "1"
         summary: Vous êtes la seule personne dédiée au logiciel libre/ à l'open source.
-        explain: Some explanation here.
+        explain: Dans l'idéal, il s'agit d'une équipe avec des équivalent temps plein, mais il faut bien commencer quelque part !
         score:
           score-1:
             value: 1
         goto: "2"
-        color: is-info
+        color: is-warning
       - answer: 2 à 4
         summary: Votre équipe contient 2 à 4 personnes dédiées au logiciel libre/ à
           l'open source
-        color: is-warning
+        color: is-info
         goto: "2"
       - answer: plus de 4
         summary: Votre équipe contient plus de 4 personnes dédiées au logiciel libre/ à
           l'open source
-        color: is-warning
+        color: is-success
         goto: "2"
   - node: "2"
     progress: "[2 16]"
@@ -84,31 +83,32 @@ tree:
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe est pluridisciplinaire
+        color : is-success
         score:
           score-2:
             value: 10
         goto: "3"
-      - answer: En partie/en cours
+      - answer: En cours
         summary: Votre équipe est presque pluridisciplinaire
         score:
           score-2:
             value: 10
         goto: "3"
         color: is-info
-      - answer: No
+      - answer: Non
         summary: Votre équipe n'est pas pluridisciplinaire.
         color: is-warning
-        goto: end
+        goto: "3"
   - node: "3"
     progress: "[3 16]"
     text: L'équipe déploie-t-elle une stratégie open source ?
-    help: Some help text here for the second question.
+    help: Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre.
     choices:
       - answer: Oui
         summary: Votre équipe déploie une stratégie open source
         goto: "4"
-        color: is-info
-      - answer: En partie/en cours
+        color: is-success
+      - answer: En cours
         summary: Votre équipe est en train de déploiyer une stratégie open source
         goto: "4"
         color: is-info
@@ -118,40 +118,74 @@ tree:
         goto: end
   - node: "4"
     progress: "[4 16]"
-    text: "Cette stratégie s'intéresse-t-elle à :"
+    text: "Cette stratégie s'intéresse-t-elle: à l’utilisation de l’open source, du logiciel libre et au développement de logiciels ? "
     help: Some help text here for the second question.
     choices:
       - answer: Oui
         summary: Votre équipe déploie une stratégie open source
-        goto: "4"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "5"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe est en train de déploiyer une stratégie open source
-        goto: "4"
+        goto: "5"
         color: is-info
       - answer: Non
         summary: Votre équipe n'a pas de stratégie open source.
         color: is-warning
-        goto: end
-  - node: "5"
+        goto: "5"
+    - node: "5"
     progress: "[5 16]"
+    text: "Cette stratégie s'intéresse-t-elle : au fait d’attirer des compétences métiers ?"
+    help: Some help text here for the second question.
+    choices:
+      - answer: Oui
+        summary: Votre équipe s'intéresse au fait d'attirer des compétences métiers.
+        goto: "6"
+        color: is-success
+      - answer: En cours
+        summary: Votre équipe commence à s'intéresser au fait d'attirer des compétences métiers. 
+        goto: "6"
+        color: is-info
+      - answer: Non
+        summary: Votre équipe ne se préoccupe pas d'attirer des compétences métiers.
+        color: is-warning
+        goto: "6"
+     - node: "6"
+    progress: "[6 16]"
+    text: "Cette stratégie s'intéresse-t-elle : aux moyens permettant la mise en oeuvre de la stratégie (moyens juridiques, financiers et humains) ?"
+    help: Some help text here for the second question.
+    choices:
+      - answer: Oui
+        summary: Votre équipe s'intéresse aux moyens permettant la mise en oeuvre de la stratégie.
+        goto: "7"
+        color: is-success
+      - answer: En cours
+        summary: Votre équipe commence à s'intéresser aux moyens permettant la mise en oeuvre de la stratégie. 
+        goto: "7"
+        color: is-info
+      - answer: Non
+        summary: Votre équipe ne se préoccupe pas des moyens permettant la mise en oeuvre de la stratégie.
+        color: is-warning
+        goto: "7"
+  - node: "7"
+    progress: "[7 16]"
     text: L'équipe dispose-t-elle d'un portail de présentation (site web) ?
     help: Some help text here for the second question.
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose d'un portail de présentation.
-        goto: "6"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "8"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe est en train de s'équiper d'un portail de présentation.
-        goto: "6"
+        goto: "8"
         color: is-info
       - answer: Non
         summary: Votre équipe n'a pas de portail de présentation.
         color: is-warning
-        goto: end
-  - node: "6"
-    progress: "[6 16]"
+        goto: "8"
+  - node: "8"
+    progress: "[8 16]"
     text: L'équipe dispose-t-elle d'un catalogue de recommandation de logiciels
       libres ?
     help: Some help text here for the second question.
@@ -159,71 +193,71 @@ tree:
       - answer: Oui tout à fait
         summary: Votre équipe dispose d'un catalogue de recommandation de logiciels
           libres.
-        goto: "7"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "9"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe est en train de s'équiper d'un catalogue de recommandation
           de logiciels libres.
-        goto: "7"
+        goto: "9"
         color: is-info
       - answer: Non
         summary: Votre équipe n'a pas de catalogue de recommandation de logiciels
           libres.
         color: is-warning
-        goto: end
-  - node: "7"
-    progress: "[7 16]"
+        goto: "9"
+  - node: "9"
+    progress: "[9 16]"
     text: L'équipe dispose-t-elle d'une liste de dépôts publiés ?
     help: Par exemple le SILL pour la mission logiciels libres de la DINUM
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose d'une liste de dépôts publiés.
-        goto: "8"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "10"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe est en train de créer une liste de dépôts publiés.
-        goto: "8"
+        goto: "10"
         color: is-info
       - answer: Non
         summary: Votre équipe n'a pas de liste de dépôts publiés.
         color: is-warning
-        goto: end
-  - node: "8"
-    progress: "[8 16]"
+        goto: "10"
+  - node: "10"
+    progress: "[10 16]"
     text: L'équipe dispose-t-elle d'une liste des licences utilisables ?
-    help: ""
+    help: 
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose d'une liste des licences utilisables.
-        goto: "9"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "11"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe est en train de créer une liste des licences utilisables.
-        goto: "9"
+        goto: "11"
         color: is-info
       - answer: Non
         summary: Votre équipe n'a pas de liste des licences utilisables.
         color: is-warning
-        goto: end
-  - node: "9"
-    progress: "[9 16]"
+        goto: "11"
+  - node: "11"
+    progress: "[11 16]"
     text: L'équipe dispose-t-elle de manière générale d'une documentation ?
     help: ""
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose de manière générale d'une documentation.
-        goto: "10"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "12"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe dispose en partie d'une documentation.
-        goto: "10"
+        goto: "12"
         color: is-info
       - answer: Non
         summary: Votre équipe n'a pas de documentation.
         color: is-warning
-        goto: end
-  - node: "10"
-    progress: "[10 16]"
+        goto: "12"
+  - node: "12"
+    progress: "[12 16]"
     text: L'équipe est-elle parvenue à mettre en lien et à créer du lien avec les
       membres de son organisation ?
     help: ""
@@ -231,38 +265,38 @@ tree:
       - answer: Oui tout à fait
         summary: Votre équipe est parvenue à mettre en lien et à créer du lien avec les
           membres de son organisation.
-        goto: "11"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "13"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe est en train de mettre en lien et de créer du lien avec
           les membres de son organisation.
-        goto: "11"
+        goto: "13"
         color: is-info
       - answer: Non
         summary: Votre équipe ne met pas en lien et n'a pas de lien avec les membres de
           son organisation.
         color: is-warning
-        goto: end
-  - node: "11"
-    progress: "[11 16]"
+        goto: "13"
+  - node: "13"
+    progress: "[13 16]"
     text: L'équipe fait-elle la promotion du logiciel libre ?
     help: Elle explique son intérêt, ses avantages, et indique les bonnes pratiques
       à adopter.
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe fait la promotion du logiciel libre.
-        goto: "12"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "14"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe commence à faire la promotion du logiciel libre.
-        goto: "12"
+        goto: "14"
         color: is-info
       - answer: Non
         summary: Votre équipe ne fait pas la promotion du logiciel libre.
         color: is-warning
-        goto: end
-  - node: "12"
-    progress: "[12 16]"
+        goto: "14"
+  - node: "14"
+    progress: "[14 16]"
     text: L'équipe fait-elle la promotion du logiciel libre de manière globale, en
       dehors de son organisation ?
     help: ""
@@ -270,62 +304,62 @@ tree:
       - answer: Oui tout à fait
         summary: Votre équipe fait la promotion du logiciel libre en dehors de son
           organisation.
-        goto: "13"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "15"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe commence à faire la promotion du logiciel libre en dehors
           de son organisation.
-        goto: "13"
+        goto: "15"
         color: is-info
       - answer: Non
         summary: Votre équipe ne fait pas la promotion du logiciel libre en dehors de
           son organisation.
         color: is-warning
-        goto: end
-  - node: "13"
-    progress: "[13 16]"
-    text: L'équipe incite-t-elle ses membres à contribuer à des projets open source
-      en dehors de ses propres produits logiciels ?
-    help: ""
-    choices:
-      - answer: Oui tout à fait
-        summary: Votre équipe incite ses membres à contribuer à des projets open source
-          en dehors de ses propres produits logiciels.
-        goto: "14"
-        color: is-info
-      - answer: En partie/en cours
-        summary: Votre équipe commence à inciter ses membres à contribuer à des projets
-          open source en dehors de ses propres produits logiciels.
-        goto: "14"
-        color: is-info
-      - answer: Non
-        summary: Votre équipe n'incite pas ses membres à contribuer à des projets open
-          source en dehors de ses propres produits logiciels.
-        color: is-warning
-        goto: end
-  - node: "14"
-    progress: "[14 16]"
-    text: L'équipe incite-t-elle ses membres à contribuer à des projets open source
-      en dehors de ses propres produits logiciels ?
-    help: ""
-    choices:
-      - answer: Oui tout à fait
-        summary: Votre équipe incite ses membres à contribuer à des projets open source
-          en dehors de ses propres produits logiciels.
         goto: "15"
-        color: is-info
-      - answer: En partie/en cours
-        summary: Votre équipe commence à inciter ses membres à contribuer à des projets
-          open source en dehors de ses propres produits logiciels.
-        goto: "15"
-        color: is-info
-      - answer: Non
-        summary: Votre équipe n'incite pas ses membres à contribuer à des projets open
-          source en dehors de ses propres produits logiciels.
-        color: is-warning
-        goto: end
   - node: "15"
     progress: "[15 16]"
+    text: L'équipe incite-t-elle ses membres à contribuer à des projets open source
+      en dehors de ses propres produits logiciels ?
+    help: ""
+    choices:
+      - answer: Oui tout à fait
+        summary: Votre équipe incite ses membres à contribuer à des projets open source
+          en dehors de ses propres produits logiciels.
+        goto: "16"
+        color: is-success
+      - answer: En cours
+        summary: Votre équipe commence à inciter ses membres à contribuer à des projets
+          open source en dehors de ses propres produits logiciels.
+        goto: "16"
+        color: is-info
+      - answer: Non
+        summary: Votre équipe n'incite pas ses membres à contribuer à des projets open
+          source en dehors de ses propres produits logiciels.
+        color: is-warning
+        goto: "16"
+  - node: "16"
+    progress: "[16 16]"
+    text: L'équipe incite-t-elle ses membres à contribuer à des projets open source
+      en dehors de ses propres produits logiciels ?
+    help: ""
+    choices:
+      - answer: Oui tout à fait
+        summary: Votre équipe incite ses membres à contribuer à des projets open source
+          en dehors de ses propres produits logiciels.
+        goto: "17"
+        color: is-success
+      - answer: En cours
+        summary: Votre équipe commence à inciter ses membres à contribuer à des projets
+          open source en dehors de ses propres produits logiciels.
+        goto: "17"
+        color: is-info
+      - answer: Non
+        summary: Votre équipe n'incite pas ses membres à contribuer à des projets open
+          source en dehors de ses propres produits logiciels.
+        color: is-warning
+        goto: "17"
+  - node: "17"
+    progress: "[17 16]"
     text: L'équipe est-elle en lien avec d'autres membres d'associations,
       d'entreprises, de la communauté du libre ?
     help: ""
@@ -333,32 +367,32 @@ tree:
       - answer: Oui tout à fait
         summary: Votre équipe est en lien avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
-        goto: "16"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "18"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe commence à être en lien avec d'autres membres
           d'associations, d'entreprises, de la communauté du libre.
-        goto: "16"
+        goto: "18"
         color: is-info
       - answer: Non
         summary: Votre équipe n'est pas en lien avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
         color: is-warning
-        goto: end
-  - node: "16"
-    progress: "[16 16]"
+        goto: "18"
+  - node: "18"
+    progress: "[18 18]"
     text: L'équipe collabore-t-elle avec ces membres ?
     help: ""
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe collabore avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
-        goto: "16"
-        color: is-info
-      - answer: En partie/en cours
+        goto: "18"
+        color: is-success
+      - answer: En cours
         summary: Votre équipe commence à collaborer avec d'autres membres
           d'associations, d'entreprises, de la communauté du libre.
-        goto: "16"
+        goto: "18"
         color: is-info
       - answer: Non
         summary: Votre équipe ne collabore pas avec d'autres membres d'associations,
