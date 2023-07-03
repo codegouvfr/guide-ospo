@@ -19,26 +19,20 @@ conditional-navigation: false
 display-unconditionnally: ""
 score-variables:
   score-1:
-    display: Score for 1
+    display: Votre score OSPO
     value: 0
-    as-top-result-display: 1 wins :)
-  score-2:
-    display: Score for 2
-    value: 0
-    max: 10
-    as-top-result-display: 2 wins :(
 conditional-score-outputs:
   cas-1:
     notification: is-success
     priority: 1
-    message: "1 wins! :)  Here is the score 1: %score-1"
+    message: "Top OSPO! (%score-1)"
     condition-1:
-      score-1: 1
+      score-1: 10
   cas-2:
     notification: is-danger
-    message: "2 wins! :(  Here is the score 2: %score-2"
+    message: "OSPO à créer... (%score-2)"
     condition-1:
-      score-2: 9
+      score-1: 0
 tree:
   - node: "0"
     text: Paré à commencer ?
@@ -52,34 +46,42 @@ tree:
         color: is-info
   - node: "1"
     progress: "[1 16]"
-    text: Y a-t-il une personne ou une équipe dédiée au logiciel libre/ à l'open
+    text: Y a-t-il une personne ou une équipe dédiée au logiciel libre / à l'open
       source au sein de votre organisation ?
     help: 
     start-page: true
     choices:
+      - answer: plus de 4
+        summary: Votre équipe contient plus de 4 personnes dédiées au logiciel libre / à
+          l'open source
+        color: is-success
+        goto: "2"
+        score:
+          score-1:
+            value: 3
+      - answer: 2 à 4
+        summary: Votre équipe contient 2 à 4 personnes dédiées au logiciel libre / à l'open source
+        color: is-info
+        goto: "2"
+        score:
+          score-1:
+            value: 2
       - answer: "1"
-        summary: Vous êtes la seule personne dédiée au logiciel libre/ à l'open source.
+        summary: Vous êtes la seule personne dédiée au logiciel libre / à l'open source.
         explain: Dans l'idéal, il s'agit d'une équipe avec des équivalent temps plein, mais il faut bien commencer quelque part !
         score:
           score-1:
             value: 1
         goto: "2"
         color: is-warning
-      - answer: 2 à 4
-        summary: Votre équipe contient 2 à 4 personnes dédiées au logiciel libre/ à
-          l'open source
-        color: is-info
+      - answer: "0"
+        summary: Vous n'avez pas encore de personne dédiée au logiciel libre dans votre structure.
         goto: "2"
-      - answer: plus de 4
-        summary: Votre équipe contient plus de 4 personnes dédiées au logiciel libre/ à
-          l'open source
-        color: is-success
-        goto: "2"
+        color: is-warning
   - node: "2"
     progress: "[2 16]"
     text: Cette équipe est-elle pluridisciplinaire ?
-    help: C'est-à-dire avec un traitement des questions légales, techniques, de
-      gouvernance et de communauté
+    help: C'est-à-dire avec un traitement des questions légales, techniques, de gouvernance et de communauté
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe est pluridisciplinaire
