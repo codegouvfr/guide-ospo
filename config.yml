@@ -9,6 +9,7 @@ header:
 footer:
   text: Some text here, possibly with **markdown** formatting.
   contact: ""
+
 mail-to: null
 display-help: true
 display-summary: true
@@ -17,10 +18,12 @@ display-score-details: true
 display-score-top-result: true
 conditional-navigation: false
 display-unconditionnally: ""
+
 score-variables:
   score-1:
     display: Votre score OSPO
     value: 0
+
 conditional-score-outputs:
   cas-1:
     notification: is-success
@@ -33,6 +36,7 @@ conditional-score-outputs:
     message: "OSPO à créer... (%score-2)"
     condition-1:
       score-1: 0
+
 tree:
   - node: "0"
     text: Paré à commencer ?
@@ -135,7 +139,7 @@ tree:
         summary: Votre équipe n'a pas de stratégie open source.
         color: is-warning
         goto: "5"
-    - node: "5"
+  - node: "5"
     progress: "[5 16]"
     text: "Cette stratégie s'intéresse-t-elle : au fait d’attirer des compétences métiers ?"
     help: Some help text here for the second question.
@@ -152,7 +156,7 @@ tree:
         summary: Votre équipe ne se préoccupe pas d'attirer des compétences métiers.
         color: is-warning
         goto: "6"
-     - node: "6"
+  - node: "6"
     progress: "[6 16]"
     text: "Cette stratégie s'intéresse-t-elle : aux moyens permettant la mise en oeuvre de la stratégie (moyens juridiques, financiers et humains) ?"
     help: Some help text here for the second question.
