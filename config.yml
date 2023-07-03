@@ -33,7 +33,7 @@ conditional-score-outputs:
       score-1: 10
   cas-2:
     notification: is-danger
-    message: "OSPO à créer... (%score-2)"
+    message: "OSPO à créer... (%score-1)"
     condition-1:
       score-1: 0
 
