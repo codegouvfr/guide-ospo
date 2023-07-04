@@ -30,7 +30,7 @@ conditional-score-outputs:
     priority: 1
     message: "Top OSPO! (%score-1)"
     condition-1:
-      score-1: 10
+      score-1: 37
   cas-2:
     notification: is-danger
     message: "OSPO à créer... (%score-1)"
