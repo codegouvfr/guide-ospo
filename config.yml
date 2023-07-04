@@ -8,9 +8,9 @@ header:
   subtitle: Voici un questionnaire sur votre OSPO, vous permettant de connaître votre degré d'ospoïsation !
 footer:
   text: Mission logiciels libres de la DINUM - [code.gouv.fr](https://code.gouv.fr)
-  contact: ""
+  contact: contact@code.gouv.fr
 
-mail-to: null
+mail-to: contact@code.gouv.fr
 display-help: true
 display-summary: true
 display-score: true
@@ -55,7 +55,7 @@ tree:
     help: "Dans l'idéal, il s'agit d'une équipe avec des équivalent temps plein, mais il faut bien commencer quelque part !"
     start-page: true
     choices:
-      - answer: plus de 4
+      - answer: Plus de 4
         summary: Votre équipe contient plus de 4 personnes dédiées au logiciel libre / à
           l'open source.
         color: is-success
@@ -84,7 +84,7 @@ tree:
   - node: "2"
     progress: "[2 18]"
     text: Cette équipe est-elle pluridisciplinaire ?
-    help: C'est-à-dire avec un traitement des questions légales, techniques, de gouvernance et de communauté
+    help: C'est-à-dire avec un traitement des questions légales, techniques, de gouvernance et de communauté.
     choices:
       - answer: Oui
         summary: Votre équipe est pluridisciplinaire.
@@ -110,21 +110,21 @@ tree:
     help: "Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre. Par exemple pour l'OSPO de la DINUM, sa stratégie se résume ainsi : [utiliser, publier, attirer](https://code.gouv.fr/fr/)." 
     choices:
       - answer: Oui
-        summary: Votre équipe déploie une stratégie open source.
+        summary: Votre équipe déploie une stratégie open source. 
         goto: "4"
         color: is-success
         score:
           score-1:
             value: 2
       - answer: En cours
-        summary: Votre équipe est en train de déploiyer une stratégie open source.
+        summary: Votre équipe est en train de déploiyer une stratégie open source. Exemple : la stratégie de la Mission logiciels libres : [utiliser, publier, attirer](https://code.gouv.fr/fr/).
         goto: "4"
         color: is-info
         score:
           score-1:
             value: 1
       - answer: Non
-        summary: Votre équipe n'a pas de stratégie open source.
+        summary: Votre équipe n'a pas de stratégie open source. Exemple : la stratégie de la Mission logiciels libres : [utiliser, publier, attirer](https://code.gouv.fr/fr/).
         color: is-warning
         goto: end
   - node: "4"
@@ -209,14 +209,14 @@ tree:
           score-1:
             value: 2
       - answer: En cours
-        summary: Votre équipe est en train de s'équiper d'un portail de présentation.
+        summary: Votre équipe est en train de s'équiper d'un portail de présentation. Exemple : voir le portail de la Mission sur [CodeGouv](https://code.gouv.fr/fr/).
         goto: "8"
         color: is-info
         score:
           score-1:
             value: 1
       - answer: Non
-        summary: Votre équipe n'a pas de portail de présentation.
+        summary: Votre équipe n'a pas de portail de présentation. Exemple : voir le portail de la Mission sur [CodeGouv](https://code.gouv.fr/fr/).
         color: is-warning
         goto: "8"
   - node: "8"
@@ -235,7 +235,7 @@ tree:
             value: 2
       - answer: En cours
         summary: Votre équipe est en train de s'équiper d'un catalogue de recommandation
-          de logiciels libres.
+          de logiciels libres. Exemple le [Socle interministériel des logiciels libres (SILL)](https://sill.code.gouv.fr/) de la Mission.
         goto: "9"
         color: is-info
         score:
@@ -243,7 +243,7 @@ tree:
             value: 1
       - answer: Non
         summary: Votre équipe n'a pas de catalogue de recommandation de logiciels
-          libres.
+          libres. Exemple le [Socle interministériel des logiciels libres (SILL)](https://sill.code.gouv.fr/) de la Mission.
         color: is-warning
         goto: "9"
   - node: "9"
@@ -259,7 +259,7 @@ tree:
           score-1:
             value: 2
       - answer: En cours
-        summary: Votre équipe est en train de créer une liste de dépôts publiés.
+        summary: Votre équipe est en train de créer une liste de dépôts publiés. Exemple : la liste des dépôts publiés sur [CodeGouv](https://code.gouv.fr/public/#/repos).
         goto: "10"
         color: is-info
         score:
@@ -272,7 +272,7 @@ tree:
   - node: "10"
     progress: "[10 18]"
     text: L'équipe dispose-t-elle d'une liste des licences utilisables ?
-    help: Voir la documentation mise à disposition sur le site de la [Mission logiciels libres](https://www.data.gouv.fr/fr/pages/legal/licences/).
+    help: Voir la liste des licences utilisables mise à disposition sur le site de la [Mission logiciels libres](https://www.data.gouv.fr/fr/pages/legal/licences/).
     choices:
       - answer: Oui
         summary: Votre équipe dispose d'une liste des licences utilisables.
@@ -282,14 +282,14 @@ tree:
           score-1:
             value: 2
       - answer: En cours
-        summary: Votre équipe est en train de créer une liste des licences utilisables.
+        summary: Votre équipe est en train de créer une liste des licences utilisables. Voir la liste des licences utilisables mise à disposition sur le site de la [Mission logiciels libres](https://www.data.gouv.fr/fr/pages/legal/licences/).
         goto: "11"
         color: is-info
         score:
           score-1:
             value: 1
       - answer: Non
-        summary: Votre équipe n'a pas de liste des licences utilisables.
+        summary: Votre équipe n'a pas de liste des licences utilisables. Voir la liste des licences utilisables mise à disposition sur le site de la [Mission logiciels libres](https://www.data.gouv.fr/fr/pages/legal/licences/).
         color: is-warning
         goto: "11"
   - node: "11"
@@ -305,14 +305,14 @@ tree:
           score-1:
             value: 2
       - answer: En cours
-        summary: Votre équipe dispose en partie d'une documentation.
+        summary: Votre équipe dispose en partie d'une documentation. Exemple : l'onglet documentation de la [Mission](https://code.gouv.fr/fr/doc/).
         goto: "12"
         color: is-info
         score:
           score-1:
             value: 1
       - answer: Non
-        summary: Votre équipe n'a pas de documentation.
+        summary: Votre équipe n'a pas de documentation. Exemple : l'onglet documentation de la [Mission](https://code.gouv.fr/fr/doc/).
         color: is-warning
         goto: "12"
   - node: "12"
@@ -331,7 +331,7 @@ tree:
             value: 2
       - answer: En cours
         summary: Votre équipe est en train de mettre en lien et de créer du lien avec
-          les membres de son organisation.
+          les membres de son organisation. Voir par exemple la communauté [BlueHats](https://code.gouv.fr/fr/bluehats/).
         goto: "13"
         color: is-info
         score:
@@ -339,7 +339,7 @@ tree:
             value: 1
       - answer: Non
         summary: Votre équipe ne met pas en lien et n'a pas de lien avec les membres de
-          son organisation.
+          son organisation. Voir par exemple la communauté [BlueHats](https://code.gouv.fr/fr/bluehats/).
         color: is-warning
         goto: "13"
   - node: "13"
