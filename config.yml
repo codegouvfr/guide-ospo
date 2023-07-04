@@ -106,8 +106,8 @@ tree:
         goto: "3"
   - node: "3"
     progress: "[3 18]"
-    text: L'équipe déploie-t-elle une stratégie open source ?
-    help: Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre. Par exemple pour l'OSPOde la DINUM, sa stratégie se résume ainsi : utiliser, publier, attirer (https://code.gouv.fr/fr/) 
+    text: "L'équipe déploie-t-elle une stratégie open source ?"
+    help: "Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre. Par exemple pour l'OSPOde la DINUM, sa stratégie se résume ainsi : utiliser, publier, attirer (https://code.gouv.fr/fr/)" 
     choices:
       - answer: Oui
         summary: Votre équipe déploie une stratégie open source
