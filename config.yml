@@ -7,7 +7,7 @@ header:
   color: is-primary
   subtitle: Voici un questionnaire sur votre OSPO, vous permettant de connaître votre degré d'ospoïsation !
 footer:
-  text: Some text here, possibly with **markdown** formatting.
+  text: [CodeGouv](https://code.gouv.fr) 
   contact: ""
 
 mail-to: null
@@ -107,7 +107,7 @@ tree:
   - node: "3"
     progress: "[3 18]"
     text: "L'équipe déploie-t-elle une stratégie open source ?"
-    help: "Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre. Par exemple pour l'OSPOde la DINUM, sa stratégie se résume ainsi : utiliser, publier, attirer (https://code.gouv.fr/fr/)" 
+    help: "Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre. Par exemple pour l'OSPO de la DINUM, sa stratégie se résume ainsi : [utiliser, publier, attirer] (https://code.gouv.fr/fr/)" 
     choices:
       - answer: Oui
         summary: Votre équipe déploie une stratégie open source
@@ -129,7 +129,7 @@ tree:
         goto: end
   - node: "4"
     progress: "[4 18]"
-    text: "Cette stratégie s'intéresse-t-elle: à l’utilisation de l’open source, du logiciel libre et au développement de logiciels ? "
+    text: "Cette stratégie s'intéresse-t-elle: à l’utilisation de l’open source, du logiciel libre et au développement de logiciels ?"
     help: Some help text here for the second question.
     choices:
       - answer: Oui
@@ -223,7 +223,7 @@ tree:
     progress: "[8 18]"
     text: L'équipe dispose-t-elle d'un catalogue de recommandation de logiciels
       libres ?
-    help: On peut prendre exemple sur la Socle interministériel des logiciels libres (SILL, https://sill.code.gouv.fr/)
+    help: On peut prendre exemple sur le [Socle interministériel des logiciels libres] (https://sill.code.gouv.fr/)
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose d'un catalogue de recommandation de logiciels
@@ -249,7 +249,7 @@ tree:
   - node: "9"
     progress: "[9 18]"
     text: L'équipe dispose-t-elle d'une liste de dépôts publiés ?
-    help: Par exemple codegouv (https://code.gouv.fr/public/#/repos)
+    help: Par exemple [CodeGouv] (https://code.gouv.fr/public/#/repos)
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose d'une liste de dépôts publiés.
@@ -272,7 +272,7 @@ tree:
   - node: "10"
     progress: "[10 18]"
     text: L'équipe dispose-t-elle d'une liste des licences utilisables ?
-    help: Voir la documentation mise à disposition sur le site de la Mission logiciels libres (https://www.data.gouv.fr/fr/pages/legal/licences/)
+    help: Voir la documentation mise à disposition sur le site de la [Mission logiciels libres] (https://www.data.gouv.fr/fr/pages/legal/licences/)
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose d'une liste des licences utilisables.
@@ -295,7 +295,7 @@ tree:
   - node: "11"
     progress: "[11 18]"
     text: L'équipe dispose-t-elle de manière générale d'une documentation ?
-    help: Voir https://code.gouv.fr/fr/doc/
+    help: Voir la [documentation] (https://code.gouv.fr/fr/doc/) sur CodeGouv 
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe dispose de manière générale d'une documentation.
@@ -319,7 +319,7 @@ tree:
     progress: "[12 18]"
     text: L'équipe est-elle parvenue à mettre en lien et à créer du lien avec les
       membres de son organisation ?
-    help: La Mission logiciels libres est parvenue à rassembler une communauté d'agents publics appelée BlueHats (https://code.gouv.fr/fr/bluehats/)
+    help: La Mission logiciels libres est parvenue à rassembler une communauté d'agents publics appelée [BlueHats] (https://code.gouv.fr/fr/bluehats/)
     choices:
       - answer: Oui tout à fait
         summary: Votre équipe est parvenue à mettre en lien et à créer du lien avec les
