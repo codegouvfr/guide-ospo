@@ -126,7 +126,7 @@ tree:
       - answer: Non
         summary: "Votre équipe n'a pas de stratégie open source. Exemple : la stratégie de la Mission logiciels libres : [utiliser, publier, attirer](https://code.gouv.fr/fr/)."
         color: is-warning
-        goto: end
+        goto: "4"
   - node: "4"
     progress: "[4 18]"
     text: "Cette stratégie s'intéresse-t-elle : à l’utilisation de l’open source, du logiciel libre et au développement de logiciels ?"
