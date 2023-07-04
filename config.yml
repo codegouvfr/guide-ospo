@@ -205,7 +205,7 @@ tree:
         summary: Votre équipe dispose d'un portail de présentation.
         goto: "8"
         color: is-success
-          score:
+        score:
           score-1:
             value: 3
       - answer: En cours
