@@ -255,7 +255,7 @@ tree:
         summary: Votre équipe dispose d'une liste de dépôts publiés.
         goto: "10"
         color: is-success
-          score:
+        score:
           score-1:
             value: 3
       - answer: En cours
