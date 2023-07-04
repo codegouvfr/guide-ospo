@@ -7,7 +7,7 @@ header:
   color: is-primary
   subtitle: Voici un questionnaire sur votre OSPO, vous permettant de connaître votre degré d'ospoïsation !
 footer:
-  text: https://code.gouv.fr
+  text: Mission logiciels libres de la DINUM - [code.gouv.fr](https://code.gouv.fr)
   contact: ""
 
 mail-to: null
