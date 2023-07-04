@@ -91,13 +91,13 @@ tree:
         color : is-success
         score:
           score-1:
-            value: 3
+            value: 2
         goto: "3"
       - answer: En cours
         summary: Votre équipe est presque pluridisciplinaire.
         score:
           score-1:
-            value: 1.5
+            value: 1
         goto: "3"
         color: is-info
       - answer: Non
@@ -115,14 +115,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe est en train de déploiyer une stratégie open source.
         goto: "4"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'a pas de stratégie open source.
         color: is-warning
@@ -138,14 +138,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe est en train de déploiyer une stratégie open source.
         goto: "5"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'a pas de stratégie open source.
         color: is-warning
@@ -161,14 +161,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à s'intéresser au fait d'attirer des compétences métiers. 
         goto: "6"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe ne se préoccupe pas d'attirer des compétences métiers.
         color: is-warning
@@ -184,14 +184,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à s'intéresser aux moyens permettant la mise en oeuvre de la stratégie. 
         goto: "7"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe ne se préoccupe pas des moyens permettant la mise en oeuvre de la stratégie.
         color: is-warning
@@ -207,14 +207,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe est en train de s'équiper d'un portail de présentation.
         goto: "8"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'a pas de portail de présentation.
         color: is-warning
@@ -232,7 +232,7 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe est en train de s'équiper d'un catalogue de recommandation
           de logiciels libres.
@@ -240,7 +240,7 @@ tree:
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'a pas de catalogue de recommandation de logiciels
           libres.
@@ -257,14 +257,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe est en train de créer une liste de dépôts publiés.
         goto: "10"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'a pas de liste de dépôts publiés.
         color: is-warning
@@ -280,14 +280,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe est en train de créer une liste des licences utilisables.
         goto: "11"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'a pas de liste des licences utilisables.
         color: is-warning
@@ -303,14 +303,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe dispose en partie d'une documentation.
         goto: "12"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'a pas de documentation.
         color: is-warning
@@ -328,7 +328,7 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe est en train de mettre en lien et de créer du lien avec
           les membres de son organisation.
@@ -336,7 +336,7 @@ tree:
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe ne met pas en lien et n'a pas de lien avec les membres de
           son organisation.
@@ -354,14 +354,14 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à faire la promotion du logiciel libre.
         goto: "14"
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe ne fait pas la promotion du logiciel libre.
         color: is-warning
@@ -379,7 +379,7 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à faire la promotion du logiciel libre en dehors
           de son organisation.
@@ -387,7 +387,7 @@ tree:
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe ne fait pas la promotion du logiciel libre en dehors de
           son organisation.
@@ -406,7 +406,7 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à inciter ses membres à contribuer à des projets
           open source en dehors de ses propres produits logiciels.
@@ -414,7 +414,7 @@ tree:
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'incite pas ses membres à contribuer à des projets open
           source en dehors de ses propres produits logiciels.
@@ -433,7 +433,7 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à inciter ses membres à contribuer à des projets
           open source en dehors de ses propres produits logiciels.
@@ -441,7 +441,7 @@ tree:
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'incite pas ses membres à contribuer à des projets open
           source en dehors de ses propres produits logiciels.
@@ -460,7 +460,7 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à être en lien avec d'autres membres
           d'associations, d'entreprises, de la communauté du libre.
@@ -468,7 +468,7 @@ tree:
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe n'est pas en lien avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
@@ -486,7 +486,7 @@ tree:
         color: is-success
         score:
           score-1:
-            value: 3
+            value: 2
       - answer: En cours
         summary: Votre équipe commence à collaborer avec d'autres membres
           d'associations, d'entreprises, de la communauté du libre.
@@ -494,7 +494,7 @@ tree:
         color: is-info
         score:
           score-1:
-            value: 1.5
+            value: 1
       - answer: Non
         summary: Votre équipe ne collabore pas avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
