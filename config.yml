@@ -86,7 +86,7 @@ tree:
     text: Cette équipe est-elle pluridisciplinaire ?
     help: C'est-à-dire avec un traitement des questions légales, techniques, de gouvernance et de communauté
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui
         summary: Votre équipe est pluridisciplinaire
         color : is-success
         score:
@@ -201,7 +201,7 @@ tree:
     text: L'équipe dispose-t-elle d'un portail de présentation (site web) ?
     help: Some help text here for the second question.
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui
         summary: Votre équipe dispose d'un portail de présentation.
         goto: "8"
         color: is-success
@@ -225,7 +225,7 @@ tree:
       libres ?
     help: On peut prendre exemple sur le [Socle interministériel des logiciels libres] (https://sill.code.gouv.fr/)
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui 
         summary: Votre équipe dispose d'un catalogue de recommandation de logiciels
           libres.
         goto: "9"
@@ -251,7 +251,7 @@ tree:
     text: L'équipe dispose-t-elle d'une liste de dépôts publiés ?
     help: Par exemple [CodeGouv] (https://code.gouv.fr/public/#/repos)
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui
         summary: Votre équipe dispose d'une liste de dépôts publiés.
         goto: "10"
         color: is-success
@@ -274,7 +274,7 @@ tree:
     text: L'équipe dispose-t-elle d'une liste des licences utilisables ?
     help: Voir la documentation mise à disposition sur le site de la [Mission logiciels libres] (https://www.data.gouv.fr/fr/pages/legal/licences/)
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui
         summary: Votre équipe dispose d'une liste des licences utilisables.
         goto: "11"
         color: is-success
@@ -297,7 +297,7 @@ tree:
     text: L'équipe dispose-t-elle de manière générale d'une documentation ?
     help: Voir la [documentation] (https://code.gouv.fr/fr/doc/) sur CodeGouv 
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui 
         summary: Votre équipe dispose de manière générale d'une documentation.
         goto: "12"
         color: is-success
@@ -321,7 +321,7 @@ tree:
       membres de son organisation ?
     help: La Mission logiciels libres est parvenue à rassembler une communauté d'agents publics appelée [BlueHats] (https://code.gouv.fr/fr/bluehats/)
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui 
         summary: Votre équipe est parvenue à mettre en lien et à créer du lien avec les
           membres de son organisation.
         goto: "13"
@@ -348,7 +348,7 @@ tree:
     help: Elle explique son intérêt, ses avantages, et indique les bonnes pratiques
       à adopter.
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui 
         summary: Votre équipe fait la promotion du logiciel libre.
         goto: "14"
         color: is-success
@@ -372,7 +372,7 @@ tree:
       dehors de son organisation ?
     help: ""
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui 
         summary: Votre équipe fait la promotion du logiciel libre en dehors de son
           organisation.
         goto: "15"
@@ -399,7 +399,7 @@ tree:
       en dehors de ses propres produits logiciels ?
     help: ""
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui
         summary: Votre équipe incite ses membres à contribuer à des projets open source
           en dehors de ses propres produits logiciels.
         goto: "16"
@@ -426,7 +426,7 @@ tree:
       en dehors de ses propres produits logiciels ?
     help: ""
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui
         summary: Votre équipe incite ses membres à contribuer à des projets open source
           en dehors de ses propres produits logiciels.
         goto: "17"
@@ -453,7 +453,7 @@ tree:
       d'entreprises, de la communauté du libre ?
     help: ""
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui 
         summary: Votre équipe est en lien avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
         goto: "18"
@@ -479,7 +479,7 @@ tree:
     text: L'équipe collabore-t-elle avec ces membres ?
     help: ""
     choices:
-      - answer: Oui tout à fait
+      - answer: Oui 
         summary: Votre équipe collabore avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
         goto: "18"
