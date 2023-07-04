@@ -7,7 +7,7 @@ header:
   color: is-primary
   subtitle: Voici un questionnaire sur votre OSPO, vous permettant de connaître votre degré d'ospoïsation !
 footer:
-  text: [CodeGouv](https://code.gouv.fr) 
+  text: [CodeGouv] (https://code.gouv.fr)
   contact: ""
 
 mail-to: null
