@@ -65,7 +65,7 @@ tree:
             value: 3
       - answer: 2 à 4
         summary: Votre équipe contient 2 à 4 personnes dédiées au logiciel libre / à l'open source
-        color: is-info
+        color: is-primary
         goto: "2"
         score:
           score-1:
@@ -76,7 +76,7 @@ tree:
           score-1:
             value: 1
         goto: "2"
-        color: is-warning
+        color: is-info
       - answer: "0"
         summary: Vous n'avez pas encore de personne dédiée au logiciel libre dans votre structure.
         goto: "2"
