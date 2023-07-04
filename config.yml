@@ -64,8 +64,8 @@ tree:
           score-1:
             value: 3
       - answer: 2 à 4
-        summary: Votre équipe contient 2 à 4 personnes dédiées au logiciel libre / à l'open source
-        color: is-primary.
+        summary: Votre équipe contient 2 à 4 personnes dédiées au logiciel libre / à l'open source.
+        color: is-primary
         goto: "2"
         score:
           score-1:
