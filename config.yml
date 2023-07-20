@@ -39,11 +39,11 @@ conditional-score-outputs:
 
 tree:
   - node: "0"
-    text: Paré à commencer ?
+    text: Prêts à commencer ?
     home-page: true
     force-help: true
     no-summary: true
-    help: Vous vous apprétez à répondre à un questionnaire de 17 questions. Cela ne vous prendra que 5 petites minutes.
+    help: Vous vous apprêtez à répondre à un questionnaire de 17 questions. Cela ne vous prendra que 5 petites minutes.
     choices:
       - answer: Oui !
         goto: "1"
