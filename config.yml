@@ -23,6 +23,7 @@ score-variables:
   score-1:
     display: Votre score OSPO
     value: 0
+    as-percent: true
     max: 37
 
 conditional-score-outputs:
