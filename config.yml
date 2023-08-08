@@ -43,15 +43,15 @@ conditional-score-outputs:
     condition-1:
       score-1: 16
   cas-4:
-  notification: is-success
-  message: "Top OSPO! (%score-1%)"
-  condition-1:
-    score-1: 33
+    notification: is-success
+    message: "Top OSPO! (%score-1%)"
+    condition-1:
+      score-1: 33
   cas-5:
-  notification: is-success
-  message: "Félicitations ! Contactez-nous ! (%score-1%)"
-  condition-1:
-    score-1: 35
+    notification: is-success
+    message: "Félicitations ! Contactez-nous ! (%score-1%)"
+    condition-1:
+      score-1: 35
 
 tree:
   - node: "0"
