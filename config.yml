@@ -36,22 +36,22 @@ conditional-score-outputs:
     notification: is-warning
     message: "OSPO en cours... (%score-1%)"
     condition-1:
-      score-1: 10
+      score-1: 8
   cas-3:
     notification: is-success
     message: "Vous y êtes presque ! (%score-1%)"
     condition-1:
-      score-1: 18
+      score-1: 16
   cas-4:
   notification: is-success
   message: "Top OSPO! (%score-1%)"
   condition-1:
-    score-1: 35
+    score-1: 33
   cas-5:
   notification: is-success
   message: "Félicitations ! Contactez-nous ! (%score-1%)"
   condition-1:
-    score-1: 37
+    score-1: 35
 
 tree:
   - node: "0"
