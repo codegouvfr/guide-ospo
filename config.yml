@@ -14,7 +14,7 @@ mail-to: contact@code.gouv.fr
 display-help: true
 display-summary: true
 display-score: true
-display-score-details: true
+display-score-details: false
 display-score-top-result: false
 conditional-navigation: false
 display-unconditionnally: ""
@@ -32,12 +32,12 @@ conditional-score-outputs:
     message: "OSPO à créer... (%score-1%)"
     condition-1:
       score-1: 0
-  cas-1:
+  cas-2:
     notification: is-warning
     message: "OSPO en cours... (%score-1%)"
     condition-1:
       score-1: 18
-  cas-2:
+  cas-3:
     notification: is-success
     message: "Top OSPO! (%score-1%)"
     condition-1:
