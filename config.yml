@@ -15,7 +15,7 @@ display-help: true
 display-summary: true
 display-score: true
 display-score-details: true
-display-score-top-result: true
+display-score-top-result: false
 conditional-navigation: false
 display-unconditionnally: ""
 
@@ -29,17 +29,17 @@ score-variables:
 conditional-score-outputs:
   cas-1:
     notification: is-danger
-    message: "OSPO à créer... (%score-1)"
+    message: "OSPO à créer... (%score-1%)"
     condition-1:
       score-1: 0
   cas-1:
     notification: is-warning
-    message: "OSPO en cours... (%score-1)"
+    message: "OSPO en cours... (%score-1%)"
     condition-1:
       score-1: 18
   cas-2:
     notification: is-success
-    message: "Top OSPO! (%score-1)"
+    message: "Top OSPO! (%score-1%)"
     condition-1:
       score-1: 37
 
