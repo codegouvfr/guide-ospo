@@ -27,31 +27,31 @@ score-variables:
     max: 37
 
 conditional-score-outputs:
-  cas-1:
-    notification: is-danger
-    message: "OSPO à créer... (%score-1%)"
-    condition-1:
-      score-1: 0
-  cas-2:
-    notification: is-warning
-    message: "OSPO en cours... (%score-1%)"
-    condition-1:
-      score-1: 8
-  cas-3:
-    notification: is-success
-    message: "Vous y êtes presque ! (%score-1%)"
-    condition-1:
-      score-1: 16
-  cas-4:
-    notification: is-success
-    message: "Top OSPO! (%score-1%)"
-    condition-1:
-      score-1: 33
   cas-5:
     notification: is-success
     message: "Félicitations ! Contactez-nous ! (%score-1%)"
     condition-1:
       score-1: 35
+  cas-4:
+    notification: is-success
+    message: "Top OSPO! (%score-1%)"
+    condition-1:
+      score-1: 33
+  cas-3:
+    notification: is-success
+    message: "Vous y êtes presque ! (%score-1%)"
+    condition-1:
+      score-1: 16
+  cas-2:
+    notification: is-warning
+    message: "OSPO en cours... (%score-1%)"
+    condition-1:
+      score-1: 8
+  cas-1:
+    notification: is-danger
+    message: "OSPO à créer... (%score-1%)"
+    condition-1:
+      score-1: 0
 
 tree:
   - node: "0"
