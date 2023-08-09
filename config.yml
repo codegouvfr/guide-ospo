@@ -43,12 +43,12 @@ conditional-score-outputs:
     condition-1:
       score-1: 16
   cas-2:
-    notification: is-warning
+    notification: is-primary
     message: "OSPO en cours... (%score-1%)"
     condition-1:
       score-1: 8
   cas-1:
-    notification: is-danger
+    notification: is-warning
     message: "OSPO à créer... (%score-1%)"
     condition-1:
       score-1: 0
