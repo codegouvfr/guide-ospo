@@ -19,7 +19,6 @@ jobs:
           cli: 1.11.1.1347
       - name: Build with Clojure
         run: |
-          clojure -X:set :theme dsfr
           clojure -M:js
       - uses: actions/upload-artifact@v3
         with:
@@ -39,7 +38,7 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} # must be in PEM format
-          ARGS: "-av --delete --exclude=dev"
+          ARGS: "-av --delete --exclude=dev --exclude=fonts"
           SOURCE: _site/
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
