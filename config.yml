@@ -1,6 +1,8 @@
 ---
 locale: fr
-ui-strings: null
+
+theme: "dsfr"
+
 header:
   title: Questionnaire OSPO
   logo: ""
