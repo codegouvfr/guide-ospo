@@ -5,7 +5,6 @@ theme: "dsfr"
 
 header:
   title: Questionnaire OSPO
-  logo: ""
   subtitle: Voici un questionnaire sur votre OSPO, vous permettant de connaître votre degré d'ospoïsation !
 footer:
   text: Mission logiciels libres de la DINUM - [code.gouv.fr](https://code.gouv.fr)
