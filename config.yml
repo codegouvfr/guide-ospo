@@ -1,4 +1,3 @@
----
 locale: fr
 
 theme: "dsfr"
@@ -26,27 +25,27 @@ score-variables:
 
 conditional-score-outputs:
   cas-5:
-    notification: is-success
+    color: is-success
     message: "Félicitations ! Contactez-nous ! (%score-1%)"
     condition-1:
       score-1: 35
   cas-4:
-    notification: is-success
+    color: is-success
     message: "Top OSPO! (%score-1%)"
     condition-1:
       score-1: 33
   cas-3:
-    notification: is-info
+    color: is-info
     message: "Vous y êtes presque ! (%score-1%)"
     condition-1:
       score-1: 16
   cas-2:
-    notification: is-warning
+    color: is-warning
     message: "OSPO en cours... (%score-1%)"
     condition-1:
       score-1: 8
   cas-1:
-    notification: is-danger
+    color: is-danger
     message: "OSPO à créer... (%score-1%)"
     condition-1:
       score-1: 0
