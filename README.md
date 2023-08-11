@@ -1,3 +1,5 @@
+
+
 # `Choices`
 
 `Choices` lets you build a single page application to let users traverse
@@ -9,16 +11,28 @@ a set of related options and get feedback from their choices.
 # Build
 
 1.  Copy `config-example.yml` to `config.yml` and adapt it to your needs
-2.  Test your configuration with `clj -A:test` or `lein test`
-3.  Compile with `clj -A:js` or `lein fig:min`
+2.  Test your configuration with `clj -A:test`
+3.  Compile with `clj -A:js`
 4.  Your static files are ready in `resources/public/`
 
 
 # Develop
 
 1.  Copy `config-example.yml` to `config.yml` and adapt it to your needs
-2.  Compile with `clj -A:fig` or `lein fig:build`
+2.  Compile with `clj -A:fig`
 3.  Check your web browser on <http://localhost:9500>
+
+
+# Themes
+
+`Choices` come with three themes: [bulma](https://bulma.io/), the default, [chota](https://jenil.github.io/chota/) and [dsfr](https://www.systeme-de-design.gouv.fr/).
+
+**Don't use the dsfr theme unless you are [authorized](https://www.systeme-de-design.gouv.fr/utilisation-et-organisation/perimetre-d-application) to.**
+
+To set chota as the theme, run `clj -X:set theme chota`.
+
+This will update `config.yml` and `resources/public/index.html` to use
+chota as the theme when generating the static website.
 
 
 # Usage
@@ -49,5 +63,6 @@ donating to [clojuriststogether.org](https://www.clojuriststogether.org).
 
 2019-2023 Bastien Guerry
 
-This application is published under the [EPL 2.0 license](LICENSE).
+This application is published under the [EPL 2.0 license](LICENSE), except for
+the fonts in `resources/public/fonts`.
 

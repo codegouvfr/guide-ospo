@@ -1,4 +1,4 @@
-{:version     "0.9.5"
+{:version     "0.10.2"
  :description "Web application to traverse a decision-tree and expose the result"
  :url         "https://github.com/etalab/choices"
  :license     {:name "Eclipse Public License - v 2.0"
@@ -22,7 +22,7 @@
   reagent/reagent                       {:mvn/version "1.2.0"}
   cljsjs/react                          {:mvn/version "18.2.0-1"}
   cljsjs/react-dom                      {:mvn/version "18.2.0-1"}
-  reagent-utils/reagent-utils           {:mvn/version "0.3.6"}
+  reagent-utils/reagent-utils           {:mvn/version "0.3.8"}
   }
 
  :paths ["src" "src/clj" "src/cljs" "resources"]
@@ -38,9 +38,12 @@
   :js {:main-opts   ["-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]
        :extra-paths ["src/cljs"]}
 
+  :set {:exec-fn   choices.macros/set-theme
+        :exec-args {:theme "bulma"}}
+
   :test {:extra-paths ["test"]
          :extra-deps  {com.cognitect/test-runner
                        {:git/url "https://github.com/cognitect-labs/test-runner.git"
-                        :sha     "209b64504cb3bd3b99ecfec7937b358a879f55c1"}}
+                        :sha     "7284cda41fb9edc0f3bc6b6185cfb7138fc8a023"}}
          :main-opts   ["-m" "cognitect.test-runner"
                        "-d" "test" "-n" "choices.test"]}}}
