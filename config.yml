@@ -23,7 +23,7 @@ score-variables:
     as-percent: true
     max: 37
 
-conditional-score-outputs:
+conditional-score-output:
   cas-5:
     color: is-success
     message: "Félicitations ! Contactez-nous ! (%score-1%)"
@@ -71,28 +71,28 @@ tree:
         summary: Votre équipe contient plus de 4 personnes dédiées au logiciel libre / à
           l'open source.
         color: is-success
-        goto: "2"
         score:
           score-1:
             value: 3
+        goto: "2"
       - answer: 2 à 4
         summary: Votre équipe contient 2 à 4 personnes dédiées au logiciel libre / à l'open source.
         color: is-info
-        goto: "2"
         score:
           score-1:
             value: 2
+        goto: "2"
       - answer: "1"
-        summary: Vous êtes la seule personne dédiée au logiciel libre / à l'open source. 
+        summary: Vous êtes la seule personne dédiée au logiciel libre / à l'open source.
+        color: is-warning
         score:
           score-1:
             value: 1
         goto: "2"
-        color: is-warning
       - answer: "0"
         summary: Vous n'avez pas encore de personne dédiée au logiciel libre dans votre structure.
-        goto: "2"
         color: is-danger
+        goto: "2"
   - node: "2"
     progress: "[2 17]"
     text: Cette équipe est-elle pluridisciplinaire ?
@@ -107,11 +107,11 @@ tree:
         goto: "3"
       - answer: En cours
         summary: Votre équipe est presque pluridisciplinaire.
+        color: is-info
         score:
           score-1:
             value: 1
         goto: "3"
-        color: is-info
       - answer: Non
         summary: Votre équipe n'est pas pluridisciplinaire.
         color: is-warning
@@ -119,22 +119,22 @@ tree:
   - node: "3"
     progress: "[3 17]"
     text: "L'équipe déploie-t-elle une stratégie open source ?"
-    help: "Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre. Par exemple pour l'OSPO de la DINUM, sa stratégie se résume ainsi : [utiliser, publier, attirer](https://code.gouv.fr/fr/)." 
+    help: "Il s'agit de décrire clairement la stratégie open source de l'organisation, autrement dit en quoi elle consiste, dans quel but elle est mise en place et comment est-elle mise en oeuvre. Par exemple pour l'OSPO de la DINUM, sa stratégie se résume ainsi : [utiliser, publier, attirer](https://code.gouv.fr/fr/)."
     choices:
       - answer: Oui
-        summary: Votre équipe déploie une stratégie open source. 
-        goto: "4"
+        summary: Votre équipe déploie une stratégie open source.
         color: is-success
         score:
           score-1:
             value: 2
+        goto: "4"
       - answer: En cours
         summary: "Votre équipe est en train de déployer une stratégie open source. Exemple : la stratégie de la Mission logiciels libres : [utiliser, publier, attirer](https://code.gouv.fr/fr/)."
-        goto: "4"
         color: is-info
         score:
           score-1:
             value: 1
+        goto: "4"
       - answer: Non
         summary: "Votre équipe n'a pas de stratégie open source. Exemple : la stratégie de la Mission logiciels libres : [utiliser, publier, attirer](https://code.gouv.fr/fr/)."
         color: is-warning
@@ -142,22 +142,22 @@ tree:
   - node: "4"
     progress: "[4 17]"
     text: "Cette stratégie s'intéresse-t-elle : à l’utilisation de l’open source, du logiciel libre et au développement de logiciels ?"
-    help: 
+    help:
     choices:
       - answer: Oui
         summary: Votre équipe déploie une stratégie open source.
-        goto: "5"
         color: is-success
         score:
           score-1:
             value: 2
+        goto: "5"
       - answer: En cours
         summary: Votre équipe est en train de déploiyer une stratégie open source.
-        goto: "5"
         color: is-info
         score:
           score-1:
             value: 1
+        goto: "5"
       - answer: Non
         summary: Votre équipe n'a pas de stratégie open source.
         color: is-warning
@@ -165,22 +165,22 @@ tree:
   - node: "5"
     progress: "[5 17]"
     text: "Cette stratégie s'intéresse-t-elle : au fait d’attirer des compétences métiers ?"
-    help: 
+    help:
     choices:
       - answer: Oui
         summary: Votre équipe s'intéresse au fait d'attirer des compétences métiers.
-        goto: "6"
         color: is-success
         score:
           score-1:
             value: 2
-      - answer: En cours
-        summary: Votre équipe commence à s'intéresser au fait d'attirer des compétences métiers. 
         goto: "6"
+      - answer: En cours
+        summary: Votre équipe commence à s'intéresser au fait d'attirer des compétences métiers.
         color: is-info
         score:
           score-1:
             value: 1
+        goto: "6"
       - answer: Non
         summary: Votre équipe ne se préoccupe pas d'attirer des compétences métiers.
         color: is-warning
@@ -188,22 +188,22 @@ tree:
   - node: "6"
     progress: "[6 17]"
     text: "Cette stratégie s'intéresse-t-elle : aux moyens permettant la mise en oeuvre de la stratégie (moyens juridiques, financiers et humains) ?"
-    help: 
+    help:
     choices:
       - answer: Oui
         summary: Votre équipe s'intéresse aux moyens permettant la mise en oeuvre de la stratégie.
-        goto: "7"
         color: is-success
         score:
           score-1:
             value: 2
-      - answer: En cours
-        summary: Votre équipe commence à s'intéresser aux moyens permettant la mise en oeuvre de la stratégie. 
         goto: "7"
+      - answer: En cours
+        summary: Votre équipe commence à s'intéresser aux moyens permettant la mise en oeuvre de la stratégie.
         color: is-info
         score:
           score-1:
             value: 1
+        goto: "7"
       - answer: Non
         summary: Votre équipe ne se préoccupe pas des moyens permettant la mise en oeuvre de la stratégie.
         color: is-warning
@@ -211,7 +211,7 @@ tree:
   - node: "7"
     progress: "[7 17]"
     text: L'équipe dispose-t-elle d'un portail de présentation (site web) ?
-    help: 
+    help:
     choices:
       - answer: Oui
         summary: Votre équipe dispose d'un portail de présentation.
@@ -237,7 +237,7 @@ tree:
       libres ?
     help: "On peut prendre exemple sur le [Socle interministériel des logiciels libres (SILL)](https://sill.code.gouv.fr/)."
     choices:
-      - answer: Oui 
+      - answer: Oui
         summary: Votre équipe dispose d'un catalogue de recommandation de logiciels
           libres.
         goto: "9"
@@ -307,9 +307,9 @@ tree:
   - node: "11"
     progress: "[11 17]"
     text: L'équipe dispose-t-elle de manière générale d'une documentation ?
-    help: "Voir la [documentation](https://code.gouv.fr/fr/doc/) sur CodeGouv." 
+    help: "Voir la [documentation](https://code.gouv.fr/fr/doc/) sur CodeGouv."
     choices:
-      - answer: Oui 
+      - answer: Oui
         summary: Votre équipe dispose de manière générale d'une documentation.
         goto: "12"
         color: is-success
@@ -333,7 +333,7 @@ tree:
       membres de son organisation ?
     help: "La Mission logiciels libres est parvenue à rassembler une communauté d'agents publics appelée [BlueHats](https://code.gouv.fr/fr/bluehats/)."
     choices:
-      - answer: Oui 
+      - answer: Oui
         summary: Votre équipe est parvenue à mettre en lien et à créer du lien avec les
           membres de son organisation.
         goto: "13"
@@ -360,7 +360,7 @@ tree:
     help: Elle explique son intérêt, ses avantages, et indique les bonnes pratiques
       à adopter.
     choices:
-      - answer: Oui 
+      - answer: Oui
         summary: Votre équipe fait la promotion du logiciel libre.
         goto: "14"
         color: is-success
@@ -384,7 +384,7 @@ tree:
       dehors de son organisation ?
     help: ""
     choices:
-      - answer: Oui 
+      - answer: Oui
         summary: Votre équipe fait la promotion du logiciel libre en dehors de son
           organisation.
         goto: "15"
@@ -438,22 +438,22 @@ tree:
       d'entreprises, de la communauté du libre ?
     help: ""
     choices:
-      - answer: Oui 
+      - answer: Oui
         summary: Votre équipe est en lien avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
-        goto: "17"
         color: is-success
         score:
           score-1:
             value: 2
+        goto: "17"
       - answer: En cours
         summary: Votre équipe commence à être en lien avec d'autres membres
           d'associations, d'entreprises, de la communauté du libre.
-        goto: "17"
         color: is-info
         score:
           score-1:
             value: 1
+        goto: "17"
       - answer: Non
         summary: Votre équipe n'est pas en lien avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
@@ -464,22 +464,22 @@ tree:
     text: L'équipe collabore-t-elle avec ces membres ?
     help: ""
     choices:
-      - answer: Oui 
+      - answer: Oui
         summary: Votre équipe collabore avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
-        goto: end
         color: is-success
         score:
           score-1:
             value: 2
+        goto: end
       - answer: En cours
         summary: Votre équipe commence à collaborer avec d'autres membres
           d'associations, d'entreprises, de la communauté du libre.
-        goto: end
         color: is-info
         score:
           score-1:
             value: 1
+        goto: end
       - answer: Non
         summary: Votre équipe ne collabore pas avec d'autres membres d'associations,
           d'entreprises, de la communauté du libre.
