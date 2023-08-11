@@ -10,13 +10,11 @@ footer:
   contact: contact@code.gouv.fr
 
 mail-to: contact@code.gouv.fr
-display-help: true
 display-summary: true
 display-score: true
 display-score-details: false
 display-score-top-result: false
 conditional-navigation: false
-display-unconditionnally: ""
 
 score-variables:
   score-1:
@@ -56,7 +54,6 @@ tree:
   - node: "0"
     text: Prêts à commencer ?
     home-page: true
-    force-help: true
     no-summary: true
     help: Vous vous apprêtez à répondre à un questionnaire de 17 questions. Cela ne vous prendra que 5 petites minutes.
     choices:
