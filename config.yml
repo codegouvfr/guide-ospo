@@ -235,7 +235,7 @@ tree:
     progress: "[8 17]"
     text: L'équipe dispose-t-elle d'un catalogue de recommandation de logiciels
       libres ?
-    help: "On peut prendre exemple sur le [Socle interministériel des logiciels libres (SILL)](https://sill.code.gouv.fr/)."
+    help: "On peut prendre exemple sur le [Socle interministériel des logiciels libres (SILL)](https://code.gouv.fr/sill/)."
     choices:
       - answer: Oui
         summary: Votre équipe dispose d'un catalogue de recommandation de logiciels
@@ -247,7 +247,7 @@ tree:
             value: 2
       - answer: En cours
         summary: "Votre équipe est en train de s'équiper d'un catalogue de recommandation
-          de logiciels libres. Exemple le [Socle interministériel des logiciels libres (SILL)](https://sill.code.gouv.fr/) de la Mission."
+          de logiciels libres. Exemple le [Socle interministériel des logiciels libres (SILL)](https://code.gouv.fr/sill/) de la Mission."
         goto: "9"
         color: is-info
         score:
@@ -255,7 +255,7 @@ tree:
             value: 1
       - answer: Non
         summary: Votre équipe n'a pas de catalogue de recommandation de logiciels
-          libres. "Exemple le [Socle interministériel des logiciels libres (SILL)](https://sill.code.gouv.fr/) de la Mission."
+          libres. "Exemple le [Socle interministériel des logiciels libres (SILL)](https://code.gouv.fr/sill/) de la Mission."
         color: is-warning
         goto: "9"
   - node: "9"
