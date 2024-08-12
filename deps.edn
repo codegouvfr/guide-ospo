@@ -1,4 +1,4 @@
-{:version     "0.10"
+{:version     "0.11"
  :description "Web application to traverse a decision-tree and expose the result"
  :url         "https://git.sr.ht/~bzg/choices"
  :license     {:name "Eclipse Public License - v 2.0"
@@ -6,19 +6,15 @@
 
  :deps
  {
-  cheshire/cheshire                     {:mvn/version "5.11.0"}
   cljsjs/clipboard                      {:mvn/version "2.0.4-0"}
   com.bhauman/figwheel-main             {:mvn/version "0.2.18"}
-  com.bhauman/rebel-readline-cljs       {:mvn/version "0.1.4"}
-  com.taoensso/tempura                  {:mvn/version "1.5.3"}
+  com.taoensso/tempura                  {:mvn/version "1.5.4"}
   io.forward/yaml                       {:mvn/version "1.0.11"}
   markdown-to-hiccup/markdown-to-hiccup {:mvn/version "0.6.2"}
-  metosin/reitit-frontend               {:mvn/version "0.6.0"}
-  org.clojure/clojure                   {:mvn/version "1.11.1"}
-  org.clojure/clojurescript             {:mvn/version "1.11.60"}
-  org.clojure/core.rrb-vector           {:mvn/version "0.1.2"}
-  org.clojure/math.numeric-tower        {:mvn/version "0.0.5"}
-  org.flatland/ordered                  {:mvn/version "1.15.11"}
+  metosin/reitit-frontend               {:mvn/version "0.7.1"}
+  org.clojure/clojure                   {:mvn/version "1.11.4"}
+  org.clojure/clojurescript             {:mvn/version "1.11.132"}
+  org.flatland/ordered                  {:mvn/version "1.15.12"}
   reagent/reagent                       {:mvn/version "1.2.0"}
   cljsjs/react                          {:mvn/version "18.2.0-1"}
   cljsjs/react-dom                      {:mvn/version "18.2.0-1"}
@@ -28,7 +24,7 @@
  :paths ["src" "src/clj" "src/cljs" "resources"]
 
  :aliases
- {:jar {:extra-deps {seancorfield/depstar {:mvn/version "RELEASE"}}
+ {:jar {:extra-deps {com.github.seancorfield/depstar {:mvn/version "RELEASE"}}
         :main-opts  ["-m" "hf.depstar.uberjar" "choices.jar"
                      "-C" "-m" "choices.server"]}
 
@@ -44,6 +40,6 @@
   :test {:extra-paths ["test"]
          :extra-deps  {com.cognitect/test-runner
                        {:git/url "https://github.com/cognitect-labs/test-runner.git"
-                        :sha     "7284cda41fb9edc0f3bc6b6185cfb7138fc8a023"}}
+                        :sha     "9d36f36ff541dac680a05010e4348c744333f191"}}
          :main-opts   ["-m" "cognitect.test-runner"
                        "-d" "test" "-n" "choices.test"]}}}
