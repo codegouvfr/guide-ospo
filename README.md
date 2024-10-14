@@ -1,68 +1,46 @@
+[![img](https://img.shields.io/badge/code.gouv.fr-ouvert-mediumseagreen.svg)](https://code.gouv.fr/documentation/#/publier.md)
+[![img](https://img.shields.io/badge/Licence-EPL%2C%20Licence%20Ouverte-orange.svg)](https://git.sr.ht/~codegouvfr/guide-juridique-logiciel-libre/tree/master/item/LICENSES)
 
 
-# `Choices`
+# Présentation
 
-`Choices` lets you build a single page application to let users traverse
-a set of related options and get feedback from their choices.
+Ce dépôt contient le code pour une application web aidant les
+utilisateurs à s'approprier les éléments principaux d'un Open Source
+Programme Office.
 
-![img](choices.png)
+L'application est là : <https://code.gouv.fr/guides/ospo/>
 
-
-# Build
-
-1.  Copy `config-example.yml` to `config.yml` and adapt it to your needs
-2.  Test your configuration with `clj -A:test`
-3.  Compile with `clj -A:js`
-4.  Your static files are ready in `resources/public/`
+Ce dépôt de code source est dérivé de l'application
+<https://git.sr.ht/~bzg/choices>.
 
 
-# Develop
+# Test et compilation
 
-1.  Copy `config-example.yml` to `config.yml` and adapt it to your needs
-2.  Compile with `clj -A:fig`
-3.  Check your web browser on <http://localhost:9500>
-
-
-# Themes
-
-`Choices` come with three themes: [bulma](https://bulma.io/), the default, [chota](https://jenil.github.io/chota/) and [dsfr](https://www.systeme-de-design.gouv.fr/).
-
-**Don't use the dsfr theme unless you are [authorized](https://www.systeme-de-design.gouv.fr/utilisation-et-organisation/perimetre-d-application) to.**
-
-To set chota as the theme, run `clj -X:set :theme chota`.
-
-This will update `config.yml` and `resources/public/index.html` to use
-chota as the theme when generating the static website.
+1.  Modifier `config.yml`
+2.  Testez votre configuration avec `clj -M:test`
+3.  Compilez avec `clj -M:fig`
+4.  Vos fichiers statiques sont dans `resources/public/`
 
 
-# Usage
+# Contribution
 
-Here are some examples where `Choices` is used:
+Les contributions au code sont les bienvenues sous forme de questions
+ou de patches à envoyer à `~codegouvfr/dev@lists.sr.ht`.
 
--   <https://guide-juridique-logiciel-libre.etalab.gouv.fr/>
--   <https://guide-juridique-open-data.etalab.gouv.fr/>
--   <https://publiccodenet.github.io/assessment-eligibility/>
+Nous n'acceptons les contributions que si elles sont signées (*signed
+off*) du vrai nom du contributeur. En signant ses contributions, le
+contributeur accepte le [developer certificate of origin](https://developercertificate.org).
 
-
-# Contribute
-
-Contributions are welcome.  You can send feedback and patches to
-[~bzg/dev@lists.sr.ht](mailto:~bzg/dev@lists.sr.ht).  For patches, please configure your local copy
-of the repository to add a prefix to the subject line of your emails:
-
-    ~$ git config format.subjectPrefix 'PATCH choices'
+Si vous ne savez pas comment contribuer autrement qu'avec des *pull
+requests*, faites votre PR, ajoutez `.patch` à l'URL de la PR,
+téléchargez le patch qui s'affiche et envoyez-le en pièce jointe à la
+liste `~codegouvfr/dev@lists.sr.ht`.
 
 
-# Support the Clojure(script) ecosystem
+# Licence
 
-If you like Clojure(script), please consider supporting maintainers by
-donating to [clojuriststogether.org](https://www.clojuriststogether.org).
+2024 DINUM, Bastien Guerry, Hélène Jonin, Louison Magro.
 
-
-# License
-
-2019-2023 Bastien Guerry
-
-This application is published under the [EPL 2.0 license](LICENSE), except for
-the fonts in `resources/public/fonts`.
+Le code de ce dépôt est publié sous [licence EPL 2.0](LICENSES/LICENSE.EPL-2.0.md) et les données du
+dépôt sous [licence Ouverte 2.0](LICENSES/LICENSE.Etalab-2.0.txt).
 
