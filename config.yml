@@ -6,7 +6,7 @@ header:
   title: "Guide interactif : montez votre Open Source Programme Office"
   subtitle: "Quels éléments clefs à s'approprier pour démarrer un Open Source Programme Office ?"
 footer:
-  text: "Mission logiciels libres de la DINUM - [code.gouv.fr](https://code.gouv.fr) - [Code Source](https://git.sr.ht/~codegouvfr/guide-ospo)"
+  text: "Mission logiciels libres de la DINUM - [code.gouv.fr](https://code.gouv.fr) - [Code Source](https://github.com/codegouvfr/guide-ospo)"
   contact: contact@code.gouv.fr
 
 mail-to: contact@code.gouv.fr
