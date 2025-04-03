@@ -7,9 +7,9 @@ header:
   subtitle: "Quels éléments clefs à s'approprier pour démarrer un Open Source Programme Office ?"
 footer:
   text: "Mission logiciels libres de la DINUM - [code.gouv.fr](https://code.gouv.fr) - [Code Source](https://github.com/codegouvfr/guide-ospo)"
-  contact: contact@code.gouv.fr
+  contact: floss@numerique.gouv.fr
 
-mail-to: contact@code.gouv.fr
+mail-to: floss@numerique.gouv.fr
 display-summary: true
 display-score: true
 display-score-details: false
